@@ -1,0 +1,15 @@
+TASK 2:
+    1-Create a new package under java, name: stereotype_annotations
+    2-Create model and config package
+    3-under the model;
+        -DataStructure
+        -Devops
+        -Microservice
+    4-Create method for each of them which is getTotalHours() and print some hour
+        ex: "Total hours: " +20;
+    5-We only need object from DataStructure and Microservice
+    6-Use Stereotype annotation way to solve it.
+    7-Create ExtraHours class inside the model package
+    8-Create a method getHours() - that return 10 (int)
+    9-use this method inside the DataStructure class to increase the total hours
+    10-Try to use lombok annotations for creating constructor

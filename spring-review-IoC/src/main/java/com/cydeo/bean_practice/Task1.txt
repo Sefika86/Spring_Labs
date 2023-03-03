@@ -1,0 +1,14 @@
+TASK 1:
+    1-Create a new module: spring-review-IoC
+    2-Add spring core dependency
+    3-create one package: bean_practice
+    4-Create 2 class
+        -FullTimeEmployee
+        -PartTimeEmployee
+    5-Create one method for each class createAccount() --print something
+    6-Get beans using spring core @Bean annotation
+    7-We need 2 String object that has
+            "Welcome to CydeoApp"
+            "Spring Core Practice"
+        8-print those objects
+        9-use New Config Class
