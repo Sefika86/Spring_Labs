@@ -1,0 +1,30 @@
+TASK 3:
+     1-create a new module: spring-review-project and add needed dependencies
+
+     2-Create config, repository, model, service packages
+
+     3-create Employee class under Model
+         -name
+         -department
+         -hourlyRate fields
+
+     4-Create EmployeeRepository interface
+         one abstract method, int getHourlyRate()
+
+     5-Create impl class DBEmployeeRepository
+         -override the method,
+             inside the method:
+                 -create one Employee object and (55)
+                 return emp.getHourlyRate() result
+
+     6-Create HoursRepository interface
+         int getHours abstract method
+
+     7-Create RegularHours class override method and return 40
+
+     8-Create Salary service
+         inside: create calculateRegularSalary() method and print salary
+             (hourlyRate * RegularHours)
+     9-Create OverTimeHours class implementing HoursInterface and override method and return 15
+
+     10-Handle the error when you call calculateRegularSalary method.
