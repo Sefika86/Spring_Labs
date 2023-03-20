@@ -24,6 +24,6 @@ public class CartController {
     @RequestMapping("/cart-list/{cartId}")
     public String getCartListItem(@PathVariable UUID cartId, Model model){
         model.addAttribute("cartItemList", cartService.retrieveCartDetail(cartId));
-        return "/cart-cart-detail";
+        return "/cart/cart-detail";
     }
 }
