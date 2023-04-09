@@ -1,26 +1,25 @@
 package com.cydeo.entity;
 
 import lombok.Data;
+import lombok.Getter;
 import lombok.NoArgsConstructor;
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import lombok.Setter;
+
+import javax.persistence.*;
 import java.math.BigDecimal;
 
 @Entity
-@Data
 @NoArgsConstructor
+@Getter
+@Setter
 public class Balance {
-
-    private BigDecimal amount;
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private int customerId;
+    private Long id;
 
+    private BigDecimal amount;
 
-    public Balance(BigDecimal amount) {
-        this.amount = amount;
-    }
+    @OneToOne
+    private Customer customer;
 }
